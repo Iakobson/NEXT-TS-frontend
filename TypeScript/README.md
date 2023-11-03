@@ -30,5 +30,13 @@
     + ``npm i @typescript-eslint/parser -D`` - парсер що дає змогу ESLint розуміти TS код;
     + ``npm i @typescript-eslint/eslint-plugin -D`` - плагін з рекомендованими правилами для TS синтаксису;
 7. необхідний конфігураційний файл .eslintrc: ``npm init @eslint/config``
+8. використовуємо Prettier як плагін: ``npm i eslint-config-prettier eslint-plugin-prettier -D``
+
+
+### husky - бібліотека, що дає змогу налаштувати git хуки
+
+* site: https://typicode.github.io/husky/#/
+* install: ``npx husky-init && npm install``
+
 
 
