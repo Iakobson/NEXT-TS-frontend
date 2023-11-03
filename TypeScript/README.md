@@ -23,6 +23,8 @@
 }
 ```
 
+> налаштуваннях компіляції TS: https://www.typescriptlang.org/tsconfig \
+> поексперементувати з пропертями: https://www.typescriptlang.org/play?q=404#example/union-and-intersection-types
 
 
 
