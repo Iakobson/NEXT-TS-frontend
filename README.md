@@ -29,8 +29,8 @@
     + https://github.com/michey85/next-blog-app/tree/api-points-basics
   - _Аутентификация и приватные роуты_ 👁
     + https://github.com/michey85/next-blog-app/tree/auth
-  - _Варианты рендеринга - RSC, CSR, SSR, SSG, ISR_
-  - _Оптимизация изображений_
+  - _Варианты рендеринга - RSC, CSR, SSR, SSG, ISR_ 🧑‍💻
+  - _Оптимизация изображений_ 🧑‍🎨
   - Релиз NextJS 14 и Server actions
     + https://github.com/michey85/next-blog-app/tree/next14
 
