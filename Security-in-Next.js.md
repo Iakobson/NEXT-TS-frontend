@@ -43,15 +43,79 @@ Server Components розглядаються як небезпечні за за
 
 ### Data Access Layer
 
+Коли ви створюєте новий веб-проект, добре мати особливий "рівень", який відповідає за роботу з даними. Він буде в середині вашого коду і відповідатиме за те, як саме ваша програма отримує та обробляє дані. Цей рівень допомагає уникнути помилок та полегшує роботу з даними, оскільки все зосереджено в одній "бібліотеці". Це може зробити командну роботу більш ефективною та покращити продуктивність.
 
+Ви створюєте такий спеціальний "кодовий пакет" у вашому JavaScript-коді, який гарантує, що доступ до даних відбувається однаково та безпечно. Ваша програма буде використовувати цей пакет, щоб взаємодіяти з даними. Він буде перевіряти, чи користувач має дозвіл на перегляд певних даних перед їх поверненням. Принцип полягає в тому, що функції, які відповідають за відображення даних, мають доступ лише до тих даних, до яких у користувача є дозвіл.
 
+Після цього вам просто слідувати стандартним правилам безпеки при створенні свого API.
 
+```typescript
+  // @data/auth.tsx
+  import { cache } from 'react';
+  import { cookies } from 'next/headers';
+ 
+  /*
+    Кешовані допоміжні методи полегшують отримання одного й того ж значення в багатьох місцях
+    без ручного передавання його навколо. Це дисциплінує передачу його від Server Component
+    до Server Component, що мінімізує ризик передачі його до Client Component.
+ */
+  export const getCurrentUser = cache(async () => {
+    const token = cookies().get('AUTH_TOKEN');
+    const decodedToken = await decryptAndValidate(token);
+    /*
+      Не включайте секретні токени або особисту інформацію як публічні поля.
+      Використовуйте класи, щоб уникнути випадкового передавання цілого об'єкта клієнту.
+    */
+    return new User(decodedToken.id);
+  });
+```
 
-
-
-
+```typescript
+  // @data/user-dto.tsx
+  import 'server-only';
+  import { getCurrentUser } from './auth';
+ 
+  function canSeeUsername(viewer: User) {
+    // Public info for now, but can change
+    return true;
+  }
+ 
+  function canSeePhoneNumber(viewer: User, team: string) {
+    // Privacy rules
+    return viewer.isAdmin || team === viewer.team;
+  }
+ 
+  export async function getProfileDTO(slug: string) {
+    // Don't pass values, read back cached values, also solves context and easier to make it lazy
+ 
+    // use a database API that supports safe templating of queries
+    const [rows] = await sql`SELECT * FROM user WHERE slug = ${slug}`;
+    const userData = rows[0];
+ 
+    const currentUser = await getCurrentUser();
+ 
+    // only return the data relevant for this query and not everything
+    // <https://www.w3.org/2001/tag/doc/APIMinimization>
+    return {
+      username: canSeeUsername(currentUser) ? userData.username : null,
+      phonenumber: canSeePhoneNumber(currentUser, userData.team)
+        ? userData.phonenumber
+        : null,
+    };
+  }
+```
 
 ### Component Level Data Access
+
+
+
+
+
+
+
+
+
+
 
 
 
