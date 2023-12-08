@@ -30,6 +30,24 @@
 
 ## GitHub eCommerce
 
+* [zonama-ecommerce](https://github.com/yuxianxu/zonama-ecommerce-Nextjs-MUI) 🤠🤩
+  - _Zonama is a full-featured e-commerce app like amazon. It is also a full stack project with NextJS, MongoDB, paypal gateway, google map, and Material UI(MUI)._
+  - site: https://zonama.vercel.app/
+    + 🎎 mongoose.Schema
+    + 🧐 search
+    + 🎭 filters
+    + ⭐ Customer Reviews
+  - _Light & Dark Theme_ 🌤️ 🌚
+
+
+
+
+
+
+
+
+
+
 
 
 
