@@ -28,14 +28,6 @@
 
 ## GitHub eCommerce
 
-* [zonama-ecommerce](https://github.com/yuxianxu/zonama-ecommerce-Nextjs-MUI) 🤠🤩
-  - _Zonama is a full-featured e-commerce app like amazon. It is also a full stack project with NextJS, MongoDB, paypal gateway, google map, and Material UI(MUI)._
-  - site: https://zonama.vercel.app/
-    + 🎎 mongoose.Schema
-    + 🧐 search
-    + 🎭 filters
-    + ⭐ Customer Reviews
-  - _Light & Dark Theme_ 🌤️ 🌚
 * [auto-promo](https://github.com/kingdeorayom/auto-promo-ph) 🤠🤩
   - _Auto Promo PH website made using Next.js_
   - site: https://www.autopromo.ph/
@@ -43,6 +35,19 @@
     + 🎭 filters
     + 🔳 firebasestorage.googleapis
   - _Light Theme_
+  - "next": "13.4.2",
+  - "@mui/material": "^5.13.1",
+* [zonama-ecommerce](https://github.com/yuxianxu/zonama-ecommerce-Nextjs-MUI) 🤩
+  - _Zonama is a full-featured e-commerce app like amazon. It is also a full stack project with NextJS, MongoDB, paypal gateway, google map, and Material UI(MUI)._
+  - site: https://zonama.vercel.app/
+    + 🎎 mongoose.Schema
+    + 🧐 search
+    + 🎭 filters
+    + ⭐ Customer Reviews
+  - _Light & Dark Theme_ 🌤️ 🌚
+  - "next": "12.1.0",
+  - "@mui/material": "^5.4.1",
+
 
 
 
