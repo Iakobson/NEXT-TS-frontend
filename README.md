@@ -76,6 +76,29 @@
 
 ## YouTube Next
 
+* [Next.js 14 Tutorial](https://www.youtube.com/playlist?list=PLC3y8-rFHvwjOKd6gdf4QtV1uYNiQnruI)
+  - 🤖 **Codevolution** 💥
+  - Routing
+    + Nested Routes / Dynamic Routes
+    + 💾 Github: https://github.com/gopinav/Next.js-14-Tutorials/tree/main/routing-demo
+  - Catch all Segments
+  - Not Found Page
+  - File Colocation
+    + Private Folders / Route Groups
+    + Layouts / Nested Layouts
+    + title Metadata
+  - Link Component Navigation
+    + Active Links
+    + Navigating Programmatically
+  - Templates
+    + Loading UI
+  - Error Handling
+    + Recovering from Errors
+    + Errors in Nested Routes
+    + Errors in Layouts
+  - Parallel Routes
+    + Unmatched Routes
+    + Intercepting Routes
 * [Все про Next.JS - для початківців і не тільки](https://www.youtube.com/playlist?list=PLx9b8ngesbGEtYSFwh61bq1h7B4rmVqWT)
   - _Огляд Next.JS за 16 хвилин_ 👁
   - _Велике оновлення NextJS 13.4 - короткий огляд_ 👁
