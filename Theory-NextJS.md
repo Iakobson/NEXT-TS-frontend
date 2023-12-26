@@ -19,6 +19,25 @@
 
 - - -
 
+## 🔥 Top libraries for NextJS project 🏆
+
+https://dev.to/nevodavid/top-12-libraries-for-your-nextjs-project-1oob
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- - -
+
 ## Version 13.4.2
 _оновлено 16.05.2023_
 
