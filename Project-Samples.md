@@ -9,6 +9,13 @@
   - _Light Theme_
   -  "next": "13.1.2",
   -  "@mui/material": "^5.11.5",
+* [Piggies-Social-Networking-Frontend](https://github.com/GPiglet/Piggies-Social-Networking-Frontend) 🍆🥕🌽
+  - _Next + MUI + Landing Page(Frontend)_
+  - site: https://codesandbox.io/s/github/GPiglet/Piggies-Social-Networking-Frontend
+  - _Light Theme_
+  -  "next": "12.1.6",
+  -  "@mui/material": "^5.8.5",
+  -  "typescript": "4.7.4"
 * [coursespace-landing-page](https://github.com/hiriski/coursespace-landing-page) 🥦🍆
   - _Coursespace - React Online Course Landing Page build with NextJs & MUI 5_
   - site: https://coursespace.vercel.app/
