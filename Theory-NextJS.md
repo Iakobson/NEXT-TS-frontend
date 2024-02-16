@@ -25,10 +25,15 @@ https://dev.to/nevodavid/top-12-libraries-for-your-nextjs-project-1oob
 
 
 
+- - -
 
-
-
-
++ **Auth.js**
+  * https://authjs.dev/
+  * NextAuth.js Example App 
+    - https://github.com/nextauthjs/next-auth-example
+    - _open source authentication solution_
+  * https://next-auth-example.vercel.app/
+    - _Server Side & Client Side_
 
 
 
