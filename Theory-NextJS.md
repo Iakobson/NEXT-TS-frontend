@@ -23,19 +23,23 @@
 
 https://dev.to/nevodavid/top-12-libraries-for-your-nextjs-project-1oob
 
-
-
-- - -
-
-+ **Auth.js**
-  * https://authjs.dev/
+### 🌐 [Auth.js](https://authjs.dev/)
+_Authentication for the Web._
   * NextAuth.js Example App 
-    - https://github.com/nextauthjs/next-auth-example
-    - _open source authentication solution_
-  * https://next-auth-example.vercel.app/
-    - _Server Side & Client Side_
+    + https://github.com/nextauthjs/next-auth-example
+      - _open source authentication solution_
+    + https://next-auth-example.vercel.app/
+      - _Server Side & Client Side_
+  * Tutorials and Explainers
+    + https://next-auth.js.org/tutorials
 
-
+#### 💨 Auth0 🔥
+  * **Next.js SDK** for signing in with Auth0
+    + https://github.com/auth0/nextjs-auth0
+      - _library for implementing user authentication in Next.js applications_
+  * Next.js Authentication By Example:
+    + https://developer.auth0.com/resources/guides/web-app/nextjs/basic-authentication
+      - Using App Router
 
 
 
